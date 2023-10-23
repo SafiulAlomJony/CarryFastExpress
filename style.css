@@ -38,6 +38,42 @@ a {
   text-decoration: none;
 }
 
+.order-list {
+  padding: 50px;
+  text-align: center;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 50px rgb(170, 183, 211);
+}
+
+.order-list li {
+  margin-top: 30px;
+  max-width: 600px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.restaurant {
+  color: tomato;
+  font-size: large;
+}
+
+.delivery {
+  color: green;
+  font-size: large;
+}
+
+.btn {
+  background-color: #048af8;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
 .products {
   display: flex;
   justify-content: space-around;

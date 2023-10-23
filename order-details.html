@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar"><h1>Order Details</h1></header>
+    <section class="order-list">
+      <h2>Order#2023102301</h2>
+      <hr />
+      <ul>
+        <li>
+          <div>
+            <span class="restaurant">1:3 Kacci Khadok</span>
+          </div>
+          <div>x2</div>
+          <div>৳1,350</div>
+        </li>
+        <li>
+          <div>
+            <span class="restaurant">1:3 Kacci Khadok</span>
+          </div>
+          <div>x2</div>
+          <div>৳1,350</div>
+        </li>
+      </ul>
+      <a href="" class="btn">Pick Up</a>
+    </section>
+    <section>
+      <button onclick="getLocation()">Try It</button>
+
+      <p id="demo"></p>
+
+      <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+
+        function showPosition(position) {
+          x.innerHTML =
+            "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude;
+        }
+      </script>
+    </section>
+    <section>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            style="width: 590px; height: 400px"
+          ></iframe
+          ><style>
+            .mapouter {
+              position: relative;
+              height: 400px;
+              width: 590px;
+              background: #fff;
+            }</style
+          ><a
+            href="https://www.eireportingonline.com/ircc-login/"
+            style="
+              color: #fff !important;
+              position: absolute !important;
+              top: 0 !important;
+              z-index: 0 !important;
+            "
+            >ircc login</a
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              height: 400px;
+              width: 590px;
+            }
+            .gmap_canvas iframe {
+              position: relative;
+              z-index: 2;
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
