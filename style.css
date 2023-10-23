@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  color: greenyellow;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.menu > a > li {
+  list-style-type: none;
+  background-color: tomato;
+  padding: 10px 15px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products > li {
+  list-style-type: none;
+  border: 2px solid red;
+  padding: 50px 80px;
+  border-radius: 50%;
+}
+
+/* Login Page Style */
+
+.login {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login > h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  /* border-radius: 5%; */
+  width: 35%;
+}
+
+input[type="submit"] {
+  padding: 12px 50px;
+  border-radius: 6%;
+  background-color: #048af8;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  /* border: 2px solid red; */
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  /* width: 15%; */
+}
+
+.footer-menu > li {
+  list-style-type: none;
+  background-color: tomato;
+  padding: 10px 15px;
+  border-radius: 10%;
+  cursor: pointer;
+  margin: 0 5px 20px 5px;
+}
